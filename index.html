@@ -3,6 +3,12 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="icon" type="image/png" sizes="512x192" href="/favicon/android-chrome-512x512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+
+
 </head>
 <body>
 
@@ -38,17 +44,17 @@
             <div class="contact">
 
                 <a href="https://github.com/KennyAck001">
-                    <img src="assets/github.png" alt="Git-Hub" class="img-width">
+                    <img src="assets/github (1).png" alt="Git-Hub" class="img-width">
 
                 </a>
 
-                <a href="">
-                    <img src="assets/linkedin.png" alt="LinkedIn" class="img-width">
+                <a href="https://www.linkedin.com/in/ayush-sharma-2a34ba345?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDYsakOygT%2FKw2WSIQwOsMQ%3D%3D">
+                    <img src="assets/social.png" alt="LinkedIn" class="img-width">
                     
                 </a>
 
-                <a href="">
-                    <img src="assets/instagram.png" alt="Instagram" class="img-width">
+                <a href="https://www.instagram.com/ayush._sharma2/">
+                    <img src="assets/social-media.png" alt="Instagram" class="img-width">
                     
                 </a>
                 
@@ -61,7 +67,7 @@
         <div class="sub-body" id="sub-body">
            
             <div class="about-me" id="about-me">
-                <div class="inside">
+                <div class="inside scale-on-scroll">
                     <p class="sub-width">
                         Hi there! I’m an aspiring MERN Stack Developer who is just starting out on this exciting journey into web development. While I don’t have any professional experience yet, I’ve been learning and practicing how to build full-stack applications using MongoDB, Express.js, React, and Node.js.
                     </p>
@@ -94,7 +100,7 @@
             </div>
             <div class="Skills" id="Skills">
                 <div class="inside">
-                    <div class="skills-name sub-width"  >
+                    <div class="skills-name sub-width scale-on-scroll "  >
                         <p>Core Technologies</p>
                         <ul>
                             <li>MongoDB (basics of NoSQL databases)</li>
@@ -104,14 +110,14 @@
                         </ul>
                     </div>
     
-                   <div class="skills-name sub-width">
+                   <div class="skills-name sub-width  scale-on-scroll">
                     <p>Styling & UI</p>
                     <ul>
                         <li>Tailwind CSS (responsive design, utility-first classes)</li>
                     </ul>
                    </div>
     
-                   <div class="skills-name sub-width">
+                   <div class="skills-name sub-width  scale-on-scroll">
                     <p>Tools & Workflow</p>
                     <ul>
                         <li>Git & GitHub (version control and code hosting)</li>
@@ -122,7 +128,7 @@
     
                    </div>
     
-                   <div class="skills-name sub-width">
+                   <div class="skills-name sub-width scale-on-scroll">
                     <p>Currently Learning</p>
                     <ul>
                         <li>Full-stack project structure & integration</li>
@@ -139,7 +145,7 @@
 
                 <h1>My Works</h1>
                 <div class="inside">
-                    <a href="https://gitproviewer.netlify.app/"><div class="proj-box sub-width">
+                    <a href="https://gitproviewer.netlify.app/"><div class="proj-box sub-width scale-on-scroll">
                         <img src="assets/Screenshot 2025-05-07 123826.png" alt="Projects" class="img">
                         <div class="proj-desc">
                             <p class="proj-name">GitHub Profile Viewer</p>
@@ -151,7 +157,7 @@
                     
                     
                     <a href="https://nownotes.netlify.app/">
-                        <div class="proj-box sub-width">
+                        <div class="proj-box sub-width scale-on-scroll">
                             <img src="assets/Screenshot 2025-05-07 140838.png" alt="Projects" class="img">
                             <div class="proj-desc">
                                 <p class="proj-name">Notes App</p>
@@ -166,7 +172,7 @@
 
 
                     <a href="https://imagfind.netlify.app/">
-                        <div class="proj-box sub-width">
+                        <div class="proj-box sub-width scale-on-scroll">
                             <img src="assets/Screenshot 2025-05-07 123936.png" alt="Projects" class="img">
                             <div class="proj-desc">
                                 <p class="proj-name">Image Finder</p>
@@ -180,7 +186,7 @@
                
 
                     <a href="https://payken001-clone.netlify.app/">
-                        <div class="proj-box sub-width">
+                        <div class="proj-box sub-width scale-on-scroll">
                             <img src="assets/Screenshot 2025-05-07 124007.png" alt="Projects" class="img">
                             <div class="proj-desc">
                                 <p class="proj-name">Paytm Clone Using Tailwind CSS</p>
@@ -194,8 +200,9 @@
                  
 
                     <a href="https://github.com/KennyAck001/Inventory_Management.git">
-                        <div class="proj-box sub-width">
-                            <img src="assets/Screenshot 2025-05-07 142320.png" alt="Projects" class="img">
+                        <div class="proj-box sub-width scale-on-scroll">
+                            
+
                             <div class="proj-desc">
                                 <p class="proj-name">Inventory Management</p>
                                 <p class="proj-des">This is a Python-based Inventory Management System that uses an SQLite database to store and manage product data. You can easily add, update, delete, and view inventory items through a simple interface. It's designed to help keep track of stock levels efficiently with persistent local storage.</p>
@@ -210,11 +217,42 @@
                 </div>
                 
 
-
             </div>
+
+
+            <footer style="text-align: center; padding: 20px; color: #94A3B8; font-size: 1rem;">
+                © 2025 Ayush Sharma. All rights reserved.
+              </footer>
+              
         </div>
     </div>
 
     
+
+
+
+
+    <script>
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+              } else {
+                entry.target.classList.remove('visible');
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+      
+        document.querySelectorAll('.scale-on-scroll').forEach((el) => {
+          observer.observe(el);
+        });
+      </script>
+      
+      
 </body>
 </html>
