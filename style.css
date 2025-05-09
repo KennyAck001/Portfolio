@@ -3,15 +3,24 @@ html {
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #0F172A;
   margin: 0;
   padding: 0;
   width: 100%;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
-  box-sizing: border-box;
   color: white;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .scale-on-scroll {
@@ -29,10 +38,10 @@ body {
 .Main {
   display: flex;
   flex-direction: row;
-  padding: 15px;
+  padding: 12px;
   margin-top: 80px;
   width: 100%;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* LEFT SIDEBAR */
@@ -40,50 +49,42 @@ body {
   width: 30%;
   max-width: 30%;
   position: fixed;
-  padding: 25px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  padding: 20px;
 }
 
 .desc h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 
 .desc h2 {
-  font-size: 1.8rem;
-  margin-top: 15px;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 .desc p {
-  font-size: 1.25rem;
+  font-size: 0.95rem;
   color: #94A3B8;
   font-weight: lighter;
 }
 
-/* UPDATED ANALOG SECTION */
 .analog {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .analog a {
   position: relative;
   display: inline-block;
-  font-size: 1.25rem;
-  transition: transform 0.3s ease-in-out;
+  font-size: 0.95rem;
   padding-left: 30px;
-  color: inherit;
-  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 .analog a:hover {
-  transform: scaleX(0.9);
+  transform: translateX(10px);
 }
 
 .analog a::before {
@@ -91,7 +92,7 @@ a {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
   height: 2px;
   width: 20px;
   background-color: #94A3B8;
@@ -99,55 +100,63 @@ a {
 }
 
 .analog a:hover::before {
-  width: 40px; /* Increase the line length on hover */
+  width: 40px;
 }
+
 .contact {
   display: flex;
   flex-direction: row;
   position: relative;
-  top: 200px;
-  gap: 25px;
+  top: 150px;
+  gap: 20px;
 }
 
 .img-width {
-  width: 35px;
+  width: 30px;
 }
 
 /* RIGHT CONTENT AREA */
 .sub-body {
   margin-left: 30%;
   width: 70%;
-  padding: 15px;
+  padding: 20px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  box-sizing: border-box;
   gap: 40px;
+  overflow-x: hidden;
 }
 
-/* COMMON SECTION STYLES */
+/* COMMON SECTIONS */
 .about-me,
 .Skills,
 .Projects {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #94A3B8;
   font-weight: lighter;
   scroll-margin-top: 100px;
   width: 100%;
 }
 
+.about-me h1,
+.Skills h1,
+.Projects h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
 .inside {
-  width: 70%;
-  margin-left: 20%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* SKILLS SECTION */
 .Skills {
-  margin-top: 80px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .skills-name {
@@ -156,17 +165,16 @@ a {
 }
 
 .skills-name:hover {
-  border: transparent 3px;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px #0e1830, -7px -7px 10px #0e1830;
+  border-radius: 10px;
+  box-shadow: 6px 6px 8px #0e1830, -5px -5px 8px #0e1830;
 }
 
 .skills-name p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 li {
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   color: #94A3B8;
   font-weight: lighter;
 }
@@ -176,7 +184,7 @@ li {
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 12px;
 }
 
 .proj-desc {
@@ -185,43 +193,40 @@ li {
 }
 
 .img {
-  height: 150px;
-  width: 240px;
+  height: 120px;
+  width: 200px;
   border: #94A3B8 solid 2px;
   border-radius: 5px;
 }
 
 .proj-name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   color: white;
 }
 
 .proj-des {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #94A3B8;
   font-weight: lighter;
 }
 
 .sub-width {
-  width: 870px;
-  padding: 15px;
+  width: 100%;
+  padding: 10px;
 }
 
 .Projects h1 {
-  margin-left: 20%;
+  margin-left: 10%;
   color: white;
 }
 
 .proj-box:hover {
-  border: transparent 3px;
-  border-radius: 15px;
-  box-shadow: 10px 10px 10px #0e1830, -7px -7px 10px #0e1830;
+  border-radius: 12px;
+  box-shadow: 6px 6px 8px #0e1830, -5px -5px 8px #0e1830;
 }
 
 /* ========== RESPONSIVE STYLES ========== */
-
-/* Medium screens (tablets) */
 @media screen and (max-width: 1024px) {
   .Main {
     flex-direction: column;
@@ -235,48 +240,43 @@ li {
   }
 
   .desc p {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .contact {
-    position: relative;
     top: 10px;
-    gap: 100px;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
   }
 
   .sub-body {
     margin-left: 0;
     width: 100%;
     padding-top: 20px;
+    height: auto;
   }
 
   .inside {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
   .sub-width {
     width: 100%;
     padding: 10px;
-    font-size: 2rem;
   }
 
   li {
-    font-size: 1.8rem;
-  }
-
-  .contact {
-    justify-content: center;
-    margin-top: 50px;
+    font-size: 1rem;
   }
 
   .skills-name {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .skills-name p {
-    font-size: 2.3remx;
+    font-size: 1.2rem;
   }
 
   .proj-box {
@@ -297,57 +297,51 @@ li {
   }
 
   .proj-name {
-    font-size: 2.3rem;
+    font-size: 1.3rem;
   }
 
   .proj-des {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .analog {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    font-size: 1.9rem;
-    flex-direction: row;
-
+    flex-wrap: wrap;
+    gap: 25px;
   }
-
-  
 }
 
-/* Small screens (mobile) */
 @media screen and (max-width: 600px) {
   .desc h1 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 
   .desc h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .desc p,
   li,
   .proj-des {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 
   .skills-name p,
   .proj-name {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .analog {
     margin-top: 40px;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
   }
 
   .proj-box {
-    gap: 10px;
+    gap: 8px;
   }
 }
