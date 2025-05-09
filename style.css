@@ -52,18 +52,7 @@ a {
   padding: 20px;
 }
 
-.desc{
-  display: flex;
-  gap: 15px;
 
-}
-
-.desc img{
-    width: 150px;
-    border: #94A3B8 solid 1px;
-    border-radius: 100%;
-
-}
 .desc h1 {
   font-size: 2rem;
   margin: 0;
@@ -251,14 +240,7 @@ li {
     text-align: center;
   }
 
-  .desc{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .desc img{
-    width: 300px;
-  }
+ 
 
   .desc p {
     font-size: 2rem;
@@ -353,13 +335,7 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-  .desc{
-    display: flex;
-    flex-direction: column;
-  }
-  .desc img{
-    width: 400px;
-  }
+ 
   .desc h1 {
     font-size: 1.5rem;
   }
