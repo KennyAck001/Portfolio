@@ -46,12 +46,24 @@ a {
 
 /* LEFT SIDEBAR */
 .about {
-  width: 30%;
-  max-width: 30%;
+  width: 40%;
+  max-width: 50%;
   position: fixed;
   padding: 20px;
 }
 
+.desc{
+  display: flex;
+  gap: 15px;
+
+}
+
+.desc img{
+    width: 150px;
+    border: #94A3B8 solid 1px;
+    border-radius: 100%;
+
+}
 .desc h1 {
   font-size: 2rem;
   margin: 0;
@@ -106,7 +118,7 @@ a {
   display: flex;
   flex-direction: row;
   position: relative;
-  top: 150px;
+  top: 100px;
   gap: 20px;
 }
 
@@ -116,8 +128,8 @@ a {
 
 /* RIGHT CONTENT AREA */
 .sub-body {
-  margin-left: 30%;
-  width: 70%;
+  margin-left: 40%;
+  width: 60%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -239,6 +251,15 @@ li {
     text-align: center;
   }
 
+  .desc{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc img{
+    width: 300px;
+  }
+
   .desc p {
     font-size: 2rem;
   }
@@ -332,6 +353,13 @@ li {
 }
 
 @media screen and (max-width: 600px) {
+  .desc{
+    display: flex;
+    flex-direction: column;
+  }
+  .desc img{
+    width: 400px;
+  }
   .desc h1 {
     font-size: 1.5rem;
   }
