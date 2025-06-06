@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Ayush Sharma</title>
+    
+</head>
+<body class="m-0 p-0">
+
+    <div class="w-full h-full flex flex-col lg:flex-row flex-wrap text-white overflow-x-hidden">
+ <!-- Sidebar -->
+<div class="lg:w-[20.5%] bg-[#111418] w-full h-20 fixed lg:min-h-full flex lg:flex-col  items-center justify-between text-center  z-30">
+        <div class="m-10 top-0">
+            <div class="rounded-full w-40 h-40 bg-[#343A40] hidden lg:block">
+                <img src="assest/pic.jpg" alt="Profile Pic" class="w-full h-full p-2 rounded-full">
+            </div>
+            <h1 class="mt-2 font-bold text-2xl">Ayush Sharma</h1>
+        </div>
+        
+        <div class="flex flex-col mb-14 hidden lg:block">
+            <ul class="flex flex-col gap-6 text-lg font-semibold">
+                <li class="hover:text-customGreen cursor-pointer transition-colors duration-300" onclick="scrollToSection('Home')">Home</li>
+                <li class="hover:text-customGreen cursor-pointer transition-colors duration-300" onclick="scrollToSection('about')">About Me</li>
+                <li class="hover:text-customGreen cursor-pointer transition-colors duration-300" onclick="scrollToSection('services')">What I Do</li>
+                <li class="hover:text-customGreen cursor-pointer transition-colors duration-300" onclick="scrollToSection('resume')">Resume</li>
+                <li class="hover:text-customGreen cursor-pointer transition-colors duration-300" onclick="scrollToSection('work')">Portfolio</li>
+                <li class="hover:text-customGreen cursor-pointer transition-colors duration-300" onclick="scrollToSection('contact')">Contact</li>
+            </ul>
+        </div>
+
+        <div class="flex flex-row gap-5 lg:mb-6 mr-5">
+            <a href="" class="w-8 hover:scale-110 transition-transform duration-300"> 
+                <img src="assest/github.png" alt="GitHub">
+            </a>
+            <a href="" class="w-8 hover:scale-110 transition-transform duration-300"> 
+                <img src="assest/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="" class="w-8 hover:scale-110 transition-transform duration-300"> 
+                <img src="assest/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Scrollable Content -->
+    <div class="lg:ml-[20%] lg:w-[81%] w-full h-full relative scroll-smooth">
+
+
+        <div id="Home" class="relative w-full min-h-screen box-border flex items-center justify-center overflow-hidden">
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover -z-10 opacity-90">
+                <source src="assest/5377268-uhd_2160_3840_25fps.mp4" type="video/mp4">
+            </video>
+
+            <div class="relative z-10 flex flex-col flex-wrap items-center justify-center text-center px-4">
+                <p class="text-3xl font-semibold mb-2">Welcome</p>
+                <p class="text-5xl font-bold mb-2">I'm <span class="text-customGreen auto-type"></span></p>
+                <p class="text-xl">Based in Mumbai, Maharashtra</p>
+            </div>
+        </div>
+
+
+
+        <!--About Me-->
+        <div class="relative inline-block bg-darkGrey flex flex-col h-fit gap-10 flex-wrap lg:p-10 p-10" id="services">
+            <div class="mt-20 flex justify-center items-center flex-col">
+                <span class="relative text-white mt-6 lg:text-4xl text-6xl font-bold text-[clamp(2rem,6vw,3.5rem)]">Know Me More</span>
+                <span class="mt-2 lg:w-20 h-[3.3px] bg-customGreen w-32"></span>
+                <span class="absolute text-gray-300 lg:text-9xl text-[150px] font-bold opacity-15 select-none pointer-events-none text-[clamp(4rem,18vw,9rem)] whitespace-nowrap">ABOUT ME</span>
+            </div>
+
+                
+                
+                <div class="flex w-full mt-10 ml-5 lg:gap-7 gap-20 lg:flex-row flex-col lg:flex-row justify-center items-start p-10">
+
+                  
+                    <div class="gap-5 flex flex-col lg:w-[65%] p-2">
+                           <div class="lg:text-3xl text-4xl font-bold"><p >I'm <span class="text-customGreen ">Ayush Sharma,</span> a Web Developer </p></div>
+                       
+                        
+                        <p class="opacity-55 lg:text-lg text-xl">As a frontend developer, I create responsive and modern web experiences using HTML, CSS, and JavaScript. My expertise with Tailwind CSS enables me to build clean, efficient interfaces quickly while maintaining design consistency across projects. I focus on delivering user-friendly websites that look great on all devices.</p>
+                        <p class="opacity-55 lg:text-lg text-xl">Currently learning React to expand my skill set into component-based development and modern JavaScript frameworks. This helps me build more dynamic and interactive applications while staying updated with current industry practices.</p>
+                    </div>
+
+
+                    <div class="flex flex-col gap-3 lg:w-[31%] w-full mt-2 font-bold">
+                        <p class="text-xl lg:text-lg ">Name: Ayush Sharma</p>
+                        <span class="w-full bg-white h-[0.5px] w-full text-xl opacity-20"></span>
+                        <p class="text-xl lg:text-lg">Email: ayushdev.codes@gmail.com</p><span class="w-full  bg-white h-[0.5px] w-full opacity-20"></span>
+                        <p class="text-xl lg:text-lg">Age: 21</p><span class="w-full bg-white h-[0.5px] w-full  opacity-20"></span>
+                        <p class="text-xl lg:text-lg">From: Mumbai</p><span class="w-full bg-white h-[0.5px] w-full  opacity-20"></span>
+                        <button class="pr-5 pl-5 pt-2 pb-2  border bg-custext-customGreen lg:text-lg text-xl rounded-full border-customGreen text-customGreen mt-2 hover:bg-customGreen hover:text-white cursor-pointer transition-colors duration-300" style="width: fit-content;">Download CV</button>
+                        
+                    </div>
+                </div>
+        </div>
+        <!--End of About Me-->
+
+
+        <!--Services-->
+        <div class="relative inline-block bg-lightGrey flex flex-col h-fit gap-10 flex-wrap lg:p-10 p-10" id="services">
+            <div class="mt-20 flex justify-center items-center flex-col">
+                <span class="relative text-white mt-6 lg:text-4xl text-6xl font-bold text-[clamp(2rem,6vw,3.5rem)]">What I Do?</span>
+                <span class="mt-2 lg:w-20 h-[3.3px] bg-customGreen w-32"></span>
+                <span class="absolute text-gray-300 lg:text-9xl text-[150px] font-bold opacity-15 select-none pointer-events-none text-[clamp(4rem,18vw,9rem)] whitespace-nowrap">SERVICES</span>
+            </div>
+
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10 p-10">
+                <div class="flex items-start gap-4">
+                    <div class="rounded-2xl flex-shrink-0">
+                        <img src="assest/landing-page.png" alt="landing-page" class="lg:w-16 w-20 object-contain">
+                    </div>
+                    <div class="flex flex-col flex-1">
+                        <h3 class="text-white lg:text-2xl text-3xl font-semibold mb-3">Landing UI Design</h3>
+                        <p class="text-gray-400 lg:text-lg text-xl leading-relaxed">Clean, responsive landing pages built with Tailwind CSS.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="rounded-2xl flex-shrink-0">
+                        <img src="assest/figma.png" alt="figma" class="lg:w-16 object-contain w-20">
+                    </div>
+                    <div class="flex flex-col flex-1">
+                        <h3 class="text-white lg:text-2xl text-3xl font-semibold mb-3">Figma To Code</h3>
+                        <p class="text-gray-400 lg:text-lg text-xl leading-relaxed">Figma to code - accurate, responsive, and ready to launch.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="rounded-2xl flex-shrink-0">
+                        <img src="assest/tailwindcss.svg" alt="tailwindcss" class="lg:w-16 object-contain w-20">
+                    </div>
+                    <div class="flex flex-col flex-1">
+                        <h3 class="text-white lg:text-2xl text-3xl font-semibold mb-3">Tailwind Integration</h3>
+                        <p class="text-gray-400 lg:text-lg leading-relaxed text-xl">Upgrade from plain CSS to modern Tailwind styling.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="rounded-2xl flex-shrink-0">
+                        <img src="assest/monitor.png" alt="UI/UX" class="lg:w-16 object-contain w-20">
+                    </div>
+                    <div class="flex flex-col flex-1">
+                        <h3 class="text-white lg:text-2xl text-3xl font-semibold mb-3">UI/UX Redesign</h3>
+                        <p class="text-gray-400 lg:text-lg leading-relaxed text-xl">Revamp outdated websites into modern, responsive designs using Tailwind CSS.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="rounded-2xl flex-shrink-0">
+                        <img src="assest/blog.png" alt="blog" class="lg:w-16 object-contain w-20">
+                    </div>
+                    <div class="flex flex-col flex-1">
+                        <h3 class="text-white lg:text-2xl text-3xl font-semibold mb-3">Portfolio Blogs</h3>
+                        <p class="text-gray-400 lg:text-lg leading-relaxed text-xl">Tailwind-powered portfolios and blogs - simple, stylish, and fast.</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start gap-4">
+                    <div class="rounded-2xl flex-shrink-0">
+                        <img src="assest/responsive-design.png" alt="responsive-design" class="lg:w-16 object-contain w-20">
+                    </div>
+                    <div class="flex flex-col flex-1">
+                        <h3 class="text-white lg:text-2xl text-3xl font-semibold mb-3">Responsive UI</h3>
+                        <p class="text-gray-400 lg:text-lg leading-relaxed text-xl">Responsive design with Tailwind CSS for a seamless user experience.</p>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        <!--End of Services-->
+
+
+
+
+
+
+        <!--Resume-->
+        <div class="relative inline-block bg-darkGrey flex flex-col h-fit gap-10 p-10" id="resume">
+            <div class="mt-20 flex justify-center items-center flex-col">
+                <span class="relative text-white mt-6 lg:text-4xl text-6xl font-bold text-[clamp(2rem,6vw,3.5rem)]">Resume</span>
+                <span class="mt-2 lg:w-20 w-32 h-[3.3px] bg-customGreen"></span>
+                <span class="absolute text-gray-300 lg:text-9xl text-[150px] font-bold opacity-15 select-none pointer-events-none text-[clamp(4rem,18vw,9rem)] whitespace-nowrap">SUMMARY</span>
+            </div>
+
+
+            
+
+            <div class="p-10 mt-10 flex flex-col gap-6">
+                <p class="text-2xl font-bold">My Education</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-[#111418] flex flex-col p-8 gap-3 rounded-lg">
+                        <p class="bg-red-500 rounded-lg w-24 text-center text-md">2019-2020</p>
+                        <p class="font-bold text-xl">SSC</p>
+                        <p class="text-lg text-customGreen">Sainath High School</p>
+                        <p class="text-lg opacity-55" >Completed SSC from Sainath High School, with strong performance in Mathematics and Science. Actively participated in school-level competitions.</p>
+                        
+                    </div>
+
+                       <div class="bg-[#111418] flex flex-col p-8 gap-3 rounded-lg">
+                        <p class="bg-red-500 rounded-lg w-24 text-center text-md">2021-2022</p>
+                        <p class="font-bold text-xl">HSC</p>
+                        <p class="text-lg text-customGreen">Sainath JR. College</p>
+                        <p class="text-lg opacity-55" >Completed HSC from Sainath Junior College, Science stream, with a focus on Physics, Chemistry, and Mathematics. Engaged in technical seminars and group projects.</p>
+                        
+                    </div>
+
+                    <div class="bg-[#111418] flex flex-col p-8 gap-3 rounded-lg">
+                        <p class="bg-red-500 rounded-lg w-24 text-center text-md">2023-2027</p>
+                        <p class="font-bold text-xl">Bachelor</p>
+                        <p class="text-lg text-customGreen">Parul University</p>
+                        <p class="text-lg opacity-55" >I am currently pursuing a B.Tech in Computer Science and Engineering (AI) at Parul University, with an expected graduation in 2027.</p>
+                        
+                    </div>
+
+
+                    <div class="bg-[#111418] flex flex-col p-8 gap-3 rounded-lg">
+                        <p class="bg-red-500 rounded-lg w-24 text-center text-md">2024</p>
+                        <p class="font-bold text-xl">Hackathon</p>
+                        <p class="text-lg text-customGreen">Parul University</p>
+                        <p class="text-lg opacity-55" >Participated in a 2-day, 1-night hackathon at Parul University, developing innovative tech solutions with a collaborative<p>
+                        
+                    </div>
+
+                    
+                   
+                </div>
+
+
+                <div class="mt-8 flex flex-col">
+                    <p class="text-2xl pb-5 font-bold">My Skills</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10"> 
+                        <div class="flex flex-col">
+                            <div class="flex flex-row justify-between">
+                                <p class="text-md font-semibold">HTML/CSS</p>
+                                <p class="text-md font-semibold">95%</p>
+                            </div>
+                            
+                            <div class="flex flex-row">
+                                <span class="mt-2 w-[95%] h-2 bg-customGreen rounded-s-lg "></span>
+                                <span class="mt-2 w-[5%] h-2 bg-[#111418] rounded-e-lg "></span>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-row justify-between">
+                                <p class="text-md font-semibold">JavaScript</p>
+                                <p class="text-md font-semibold">80%</p>
+                            </div>
+                            
+                            <div class="flex flex-row">
+                                <span class="mt-2 w-4/5 h-2 bg-customGreen rounded-s-lg "></span>
+                                <span class="mt-2 w-1/5 h-2 bg-[#111418] rounded-e-lg "></span>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-row justify-between">
+                                <p class="text-md font-semibold">React</p>
+                                <p class="text-md font-semibold">65%</p>
+                            </div>
+                            
+                            <div class="flex flex-row">
+                                <span class="mt-2 w-2/3 h-2 bg-customGreen rounded-s-lg "></span>
+                                <span class="mt-2 w-1/3 h-2 bg-[#111418] rounded-e-lg "></span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-row justify-between">
+                                <p class="text-md font-semibold">Tailwind CSS</p>
+                                <p class="text-md font-semibold">75%</p>
+                            </div>
+                            
+                            <div class="flex flex-row">
+                                <span class="mt-2 w-3/4 h-2 bg-customGreen rounded-s-lg "></span>
+                                <span class="mt-2 w-3/12 h-2 bg-[#111418] rounded-e-lg "></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Resume-->
+
+
+
+        <!--My Works-->
+        <div class="relative inline-block bg-lightGrey flex flex-col h-fit gap-10 p-10" id="work">
+            <div class="mt-20 flex justify-center items-center flex-col">
+                <span class="relative text-white mt-6 lg:text-4xl text-6xl font-bold text-[clamp(2rem,6vw,3.5rem)]">My Works</span>
+                <span class="mt-2 lg:w-20 w-32 h-[3.3px] bg-customGreen"></span>
+                <span class="absolute text-gray-300 lg:text-9xl text-[150px] font-bold opacity-15 select-none pointer-events-none text-[clamp(4rem,18vw,9rem)] whitespace-nowrap">PORTFOLIO</span>
+            </div>
+            
+            <div class="grid-box flex justify-center mt-10 p-10">
+                <div class="rounded-lg flex items-center justify-center flex-col relative overflow-hidden   group cursor-pointer" style="grid-area: box-1;">
+                    <a href="https://gitproviewer.netlify.app/" class="no-underline w-full h-full">
+                        <img src="/assest/github-img.jpg" alt="github" class="h-full w-full   rounded-lg absolute transition-transform transform duration-300 ease-in-out group-hover:scale-105">
+                        <div class="w-full h-full flex items-center justify-center relative opacity-0 name-txt group-hover:opacity-100 group-hover:bg-backGround rounded-lg">
+                            <p class="text-lg font-semibold">GitHub Profile Viewer</p>
+                        </div>
+                    </a>
+                   
+                </div>
+                <div class="rounded-lg flex items-center justaify-center flex-col relative overflow-hidden   group cursor-pointer" style="grid-area: box-2;">
+                    <a href="https://github.com/KennyAck001/Inventory_Management.git" class="no-underline w-full h-full">
+                        <img src="/assest/inventory management.jpg" alt="github" class="h-full w-full   rounded-lg absolute transition-transform transform duration-300 ease-in-out group-hover:scale-105">
+                    <div class="w-full h-full flex items-center justify-center relative opacity-0 name-txt group-hover:opacity-100 group-hover:bg-backGround rounded-lg">
+                        <p class="text-lg font-semibold">Inventroy Management</p>
+                    </div>
+                    </a>
+
+                    
+                </div>
+                <div class="rounded-lg flex items-center justify-center flex-col relative overflow-hidden   group cursor-pointer" style="grid-area: box-3;">
+                    <a href="https://imagfind.netlify.app/" class="no-underline w-full h-full">
+                        <img src="/assest/img-finder.jpg" alt="github" class="h-full w-full   rounded-lg absolute transition-transform transform duration-300 ease-in-out group-hover:scale-105">
+                    <div class="w-full h-full flex items-center justify-center relative opacity-0 name-txt group-hover:opacity-100 group-hover:bg-backGround rounded-lg">
+                        <p class="text-lg font-semibold">Image Finder</p>
+                    </div>
+                    </a>
+                    
+                </div>
+                <div class="rounded-lg flex items-center justify-center flex-col relative overflow-hidden   group cursor-pointer" style="grid-area: box-4;">
+                    <a href="https://ayushsharmaport.netlify.app/" class="no-underline w-full h-full">
+                        <img src="/assest/poprtfolio.webp" alt="github" class="h-full w-full   rounded-lg absolute transition-transform transform duration-300 ease-in-out group-hover:scale-105">
+                    <div class="w-full h-full flex items-center justify-center relative opacity-0 name-txt group-hover:opacity-100 group-hover:bg-backGround rounded-lg">
+                        <p class="text-lg font-semibold">Portfolio</p>
+                    </div>
+                    </a>
+                    
+                </div>
+                <div class="rounded-lg flex items-center justify-center flex-col relative overflow-hidden   group cursor-pointer" style="grid-area: box-5;">
+                    <a href="https://nownotes.netlify.app/" class="no-underline w-full h-full">
+                        <img src="/assest/notes.jpg" alt="github" class="h-full w-full   rounded-lg absolute transition-transform transform duration-300 ease-in-out group-hover:scale-105">
+                    <div class="w-full h-full flex items-center justify-center relative opacity-0 name-txt group-hover:opacity-100 group-hover:bg-backGround rounded-lg">
+                        <p class="text-lg font-semibold">Notes App</p>
+                    </div>
+                    </a>
+                    
+                </div>
+                <div class="rounded-lg flex items-center justify-center flex-col relative overflow-hidden   group cursor-pointer" style="grid-area: box-6;">
+                    <a href="https://payken001-clone.netlify.app/" class="w-full h-full no-underline">
+                        <img src="/assest/paytm.jpg" alt="github" class="h-full w-full   rounded-lg absolute transition-transform transform duration-300 ease-in-out group-hover:scale-105">
+                    <div class="w-full h-full flex items-center justify-center relative opacity-0 name-txt group-hover:opacity-100 group-hover:bg-backGround rounded-lg">
+                        <p class="text-lg font-semibold">Paytm Clone</p>
+                    </div>
+                    </a>
+                    
+                </div>
+            </div>
+
+
+        </div>
+        <!--End of My Works-->
+
+
+        <!--Contact Me-->
+         <div class="relative inline-block bg-darkGrey flex flex-col h-fit gap-10  p-10" id="contact">
+            <div class="mt-20 flex justify-center items-center flex-col">
+                <span class="relative text-white mt-6 lg:text-4xl text-6xl font-bold text-[clamp(2rem,6vw,3.5rem)]">Get in Touch</span>
+                <span class="mt-2 lg:w-20 w-32 h-[3.3px] bg-customGreen"></span>
+                <span class="absolute text-gray-300 lg:text-9xl text-[150px] font-bold opacity-15 select-none pointer-events-none text-[clamp(4rem,18vw,9rem)] whitespace-nowrap">CONTACT</span>
+            </div>
+
+            
+
+                <div class="mt-10 p-10 gap-16 flex lg:flex-row flex-wrap-reverse w-full">                 
+                    <div class="lg:w-1/4  w-full flex flex-col gap-5 justify-center items-center">                     
+                        <p class="text-xl font-semibold">ADDRESS</p>                     
+                        <p class="break-words">Turbhe Vashi, Navi Mumbai. Maharashtra</p>                     
+                        <div class="flex flex-col gap-4 justify-center">                         
+                            <div class="flex flex-row gap-2 items-center">                             
+                                <img src="/assest/call.png" alt="call" class="w-5 flex-shrink-0">                             
+                                <p class="break-all">(+91) 9137253356</p>                         
+                            </div>                         
+                            <div class="flex flex-row gap-2 items-center">                             
+                                <img src="/assest/email.png" alt="email" class="w-5 flex-shrink-0">                             
+                                <p class="break-all text-sm">ayushdev.codes@gmail.com</p>                         
+                            </div>                                              
+                        </div>                     
+                        <p class="text-xl font-semibold">FOLLOW ME</p>                     
+                        <div class="flex flex-row gap-2">                         
+                            <img src="/assest/github-follow.png" alt="github" class="w-6">                         
+                            <img src="/assest/instagram.png" alt="instagram" class="w-6">                         
+                            <img src="/assest/facebook.png" alt="facebook" class="w-6">                         
+                            <img src="/assest/twitter.png" alt="twitter" class="w-6">                     
+                        </div>                 
+                    </div>  
+                    
+                    
+                    <div class="lg:w-3/4 w-full justify-between flex-col gap-3 flex">                                          
+                        <p class="text-xl font-semibold">SEND ME A NOTE</p>                                          
+                        <div class="flex flex-col gap-5">                                                  
+                            <div class="flex flex-row gap-3">                                                          
+                                <input type="text" placeholder="Name" class="w-1/2 rounded-md bg-blueGrey p-3">                                                          
+                                <input type="email" placeholder="Email" class="w-1/2 rounded-md bg-blueGrey p-3">                                                  
+                            </div>                                                  
+                            <div>                                                          
+                                <textarea placeholder="Tell me more about your needs......" class="w-full bg-blueGrey rounded-md h-28 p-3 align-top resize-y placeholder:align-top"></textarea>                                                  
+                            </div>                                          
+                        </div>                     
+                        <div class="flex justify-center">                         
+                            <button type="submit" class="bg-customGreen hover:bg-transparent hover:text-customGreen hover:border-customGreen border border-transparent mt-3 text-white font-medium px-8 py-3 rounded-full transition-colors duration-300 font-semibold">                             
+                                Send Message                         
+                            </button>                     
+                        </div>                                 
+                    </div>             
+            </div>
+
+        </div>
+        <!--End of Contact Me-->
+
+        <!--Copyrights-->
+
+        <div class="relative inline-block bg-lightGrey flex flex-row items-center justify-center h-fit gap-10 p-10" >
+          
+                <p class="text-gray-400 text-md ">&copy; 2025 All rights reserved &bull; Mumbai, Maharashtra</p>
+            
+            
+        </div>
+
+
+        
+    </div>
+
+    </div>
+   
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js">
+     
+    </script>
+</body>
+</html>
