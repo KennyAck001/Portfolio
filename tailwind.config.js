@@ -11,9 +11,9 @@ module.exports = {
         backGround: "#00000080",
       },
       screens: {
-        'xs': '480px',  // Custom breakpoint for small screens
+        'xs': '360px',  // Custom breakpoint for small screens
         'lg': '1200px',
-        'cn':'1000px'// Custom breakpoint for large screens
+        'cn':'360px'// Custom breakpoint for large screens
       },
     },
   },
