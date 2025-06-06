@@ -305,8 +305,8 @@
             
             <div class="grid-box flex justify-center mt-10 p-10">
                 <div class="rounded-lg flex items-center justify-center flex-col relative overflow-hidden   group cursor-pointer" style="grid-area: box-1;">
-                    <a href="https://gitproviewer.netlify.app/" class="no-underline w-full h-full">
-                        <img src="/assest/github-img.jpg" alt="github" class="h-full w-full   rounded-lg absolute transition-transform transform duration-300 ease-in-out group-hover:scale-105">
+                    <a href="https://gitproviewer.netlify.app/" class="no-underline w-full h-full hover:bg-project">
+                        <img src="/assest/github-img.jpg" alt="github" class="h-full w-full   rounded-lg absolute transition-transform transform duration-300 ease-in-out group-hover:scale-105 ">
                         <div class="w-full h-full flex items-center justify-center relative opacity-0 name-txt group-hover:opacity-100 group-hover:bg-backGround rounded-lg">
                             <p class="text-lg font-semibold">GitHub Profile Viewer</p>
                         </div>
@@ -376,48 +376,62 @@
 
             
 
-                <div class="mt-10 p-10 gap-16 flex lg:flex-row flex-wrap-reverse w-full">                 
-                    <div class="lg:w-1/4  w-full flex flex-col gap-5 justify-center items-center">                     
-                        <p class="text-xl font-semibold">ADDRESS</p>                     
-                        <p class="break-words">Turbhe Vashi, Navi Mumbai. Maharashtra</p>                     
-                        <div class="flex flex-col gap-4 justify-center">                         
-                            <div class="flex flex-row gap-2 items-center">                             
-                                <img src="/assest/call.png" alt="call" class="w-5 flex-shrink-0">                             
-                                <p class="break-all">(+91) 9137253356</p>                         
-                            </div>                         
-                            <div class="flex flex-row gap-2 items-center">                             
-                                <img src="/assest/email.png" alt="email" class="w-5 flex-shrink-0">                             
-                                <p class="break-all text-sm">ayushdev.codes@gmail.com</p>                         
-                            </div>                                              
-                        </div>                     
-                        <p class="text-xl font-semibold">FOLLOW ME</p>                     
-                        <div class="flex flex-row gap-2">                         
-                            <img src="/assest/github-follow.png" alt="github" class="w-6">                         
-                            <img src="/assest/instagram.png" alt="instagram" class="w-6">                         
-                            <img src="/assest/facebook.png" alt="facebook" class="w-6">                         
-                            <img src="/assest/twitter.png" alt="twitter" class="w-6">                     
-                        </div>                 
-                    </div>  
-                    
-                    
-                    <div class="lg:w-3/4 w-full justify-between flex-col gap-3 flex">                                          
-                        <p class="text-xl font-semibold">SEND ME A NOTE</p>                                          
-                        <div class="flex flex-col gap-5">                                                  
-                            <div class="flex flex-row gap-3">                                                          
-                                <input type="text" placeholder="Name" class="w-1/2 rounded-md bg-blueGrey p-3">                                                          
-                                <input type="email" placeholder="Email" class="w-1/2 rounded-md bg-blueGrey p-3">                                                  
-                            </div>                                                  
-                            <div>                                                          
-                                <textarea placeholder="Tell me more about your needs......" class="w-full bg-blueGrey rounded-md h-28 p-3 align-top resize-y placeholder:align-top"></textarea>                                                  
-                            </div>                                          
-                        </div>                     
-                        <div class="flex justify-center">                         
-                            <button type="submit" class="bg-customGreen hover:bg-transparent hover:text-customGreen hover:border-customGreen border border-transparent mt-3 text-white font-medium px-8 py-3 rounded-full transition-colors duration-300 font-semibold">                             
-                                Send Message                         
-                            </button>                     
-                        </div>                                 
-                    </div>             
-            </div>
+        <div class="mt-10 p-10 flex flex-col gap-16 items-start contact flex-nowrap" >
+
+ 
+
+  <!-- Form Section -->
+  <div class="lg:w-3/4 w-full flex flex-col gap-3">
+    <p class="text-xl font-semibold">SEND ME A NOTE</p>
+
+    <div class="flex flex-col gap-5 w-full">
+      <div class="flex flex-col gap-5 w-full">
+        <input type="text" placeholder="Name" class="w-full rounded-md bg-blueGrey p-3">
+        <input type="email" placeholder="Email" class="w-full rounded-md bg-blueGrey p-3">
+      </div>
+      <div>
+        <textarea placeholder="Tell me more about your needs......" class="w-full bg-blueGrey rounded-md h-28 p-3 resize-y placeholder:align-top"></textarea>
+      </div>
+    </div>
+
+    <div class="flex justify-center lg:justify-start">
+      <button type="submit" class="bg-customGreen hover:bg-transparent hover:text-customGreen hover:border-customGreen border border-transparent mt-3 text-white font-medium px-8 py-3 rounded-full transition-colors duration-300 font-semibold">
+        Send Message
+      </button>
+    </div>
+  </div>
+
+
+
+   <!-- Address Section -->
+  <div class="lg:w-fit flex flex-col lg:justify-start lg:items-start address gap-5">
+    <p class="text-xl font-semibold">ADDRESS</p>
+    <p class="break-words">Turbhe Vashi, Navi Mumbai. Maharashtra</p>
+
+    <div class="flex flex-col gap-4 justify-start">
+      <div class="flex flex-row gap-2 items-center">
+        <img src="/assest/call.png" alt="call" class="w-5 flex-shrink-0">
+        <p class="break-all">(+91) 9137253356</p>
+      </div>
+      <div class="flex flex-row gap-2 items-center">
+        <img src="/assest/email.png" alt="email" class="w-5 flex-shrink-0">
+        <p class="break-all text-sm">ayushdev.codes@gmail.com</p>
+      </div>
+    </div>
+
+    <p class="text-xl font-semibold">FOLLOW ME</p>
+    <div class="flex flex-row gap-3">
+      <img src="/assest/github-follow.png" alt="github" class="w-6">
+      <img src="/assest/instagram.png" alt="instagram" class="w-6">
+      <img src="/assest/facebook.png" alt="facebook" class="w-6">
+      <img src="/assest/twitter.png" alt="twitter" class="w-6">
+    </div>
+  </div>
+
+
+  
+</div>
+
 
         </div>
         <!--End of Contact Me-->

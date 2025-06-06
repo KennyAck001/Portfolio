@@ -66,3 +66,18 @@ body{
 
     
 }
+@media (min-width:800px){
+    .contact{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+}
+@media (min-width:300px)and (max-width:799px){
+    .address{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
