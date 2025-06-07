@@ -8,12 +8,15 @@ module.exports = {
         lightGrey: "#343A40",
         darkGrey: "#212529",
         blueGrey: "#252B33",
-        backGround: "#00000080",
+        hov: "#ffff5",
       },
       screens: {
-        'xs': '360px',  // Custom breakpoint for small screens
-        'lg': '1200px',
-        'cn':'360px'// Custom breakpoint for large screens
+        sm: "640px",
+        md: "900px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "xs": "360px", // Custom screen size (optional)
       },
     },
   },
