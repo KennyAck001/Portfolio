@@ -3,3 +3,136 @@
 @tailwind utilities;
 
 
+body{
+    scroll-behavior: smooth;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: 
+    "box-1 box-2 box-3"
+    "box-4 box-2 box-5"
+    "box-4 box-6 box-5"
+    "box-4  box-6 box-5";
+    gap: 1em;
+   
+    
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
+}
+
+
+@media (min-width:768px) and (max-width:850px) {
+    .grid-box{ 
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-areas: 
+    "box-1 box-3 "
+    "box-2 box-3 "
+    "box-4 box-5 "
+    "box-4 box-6";
+    gap: 1em;
+    
+}
+
+    
+}
+
+@media (min-width:600px) and (max-width:767px) {
+    .grid-box{ 
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: 
+    "box-1 box-3 "
+    "box-2 box-3 "
+    "box-4 box-5 "
+    "box-4 box-6";
+    gap: 1em;
+    
+}
+
+    
+}
+@media (min-width:300px) and (max-width:400px) {
+    .grid-box{ 
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 370px 370px 370px 370px 370px 370px;
+    grid-template-areas: 
+    "box-1  "
+    "box-2"
+    "box-3"
+    "box-4 "
+    "box-5 "
+    "box-6";
+    gap: 1em;
+    
+}
+ 
+}
+@media (min-width:401px) and (max-width:599px) {
+    .grid-box{ 
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    grid-template-areas: 
+    "box-1  "
+    "box-2"
+    "box-3"
+    "box-4 "
+    "box-5 "
+    "box-6";
+    gap: 1em;
+    
+}
+}
+
+
+@media (min-width:800px){
+    .contact{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+}
+
+@media (min-width:300px)and (max-width:799px){
+    .address{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+
+}
