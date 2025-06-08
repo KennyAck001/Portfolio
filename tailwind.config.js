@@ -8,7 +8,7 @@ module.exports = {
         lightGrey: "#343A40",
         darkGrey: "#212529",
         blueGrey: "#252B33",
-        hov: "#ffff5",
+        backGround: "#00000080",
       },
       screens: {
         sm: "580px",
