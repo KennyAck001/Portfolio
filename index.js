@@ -6,7 +6,7 @@ var type = new Typed(".auto-type",{
 
 })
 
-function scrollToSection(id){
+function scrollToPoint(id){
   const target = document.getElementById(id);
   if(target){
     
