@@ -6,13 +6,4 @@ var type = new Typed(".auto-type",{
 
 })
 
-function scrollToPoint(id){
-  const target = document.getElementById(id);
-  if(target){
-    
-    target.scrollIntoView({behavior:'smooth',
-      block:'start'
-    });
-  }
 
-}
