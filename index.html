@@ -3,17 +3,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="src/input.css">
     <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Ayush Sharma</title>
     
 </head>
-<body class="m-0 p-0">
+<body class="m-0 p-0 font-poppins">
 
     <div class="w-full h-full flex md:flex-col flex-row flex-wrap text-white overflow-x-hidden">
  <!-- Sidebar -->
 <div class="lg:w-[20.5%] bg-[#111418] w-full h-20 fixed lg:min-h-full flex flex-row lg:flex-col  items-center justify-between text-center  z-30">
-        <div class="m-10  lg:ml-5 top-0">
+        <div class="lg:m-10 m-3  lg:ml-5 top-0">
             <div class="rounded-full w-40 h-40 bg-[#343A40] hidden lg:block">
                 <img src="assest/pic.jpg" alt="Profile Pic" class="w-full h-full p-2 rounded-full">
             </div>
@@ -63,34 +64,34 @@
 
 
         <!--About Me-->
-        <div class="w-full relative inline-block bg-darkGrey flex items-center justify-center flex-col h-fit gap-10 flex-wrap lg:p-10 p-1" id="about">
+        <div id="about" class="w-full h-min-full bg-darkGrey flex flex-col justify-center items-center sm:p-10 text-center gap-10">
             <div class="mt-20 flex justify-center items-center flex-col">
                 <span class="relative text-white lg:mt-6 mt-3 lg:text-4xl text-6xl font-bold text-[clamp(2rem,6vw,3.5rem)]">Know Me More</span>
-                <span class="mt-2 md:w-20 h-[3.3px] bg-customGreen w-32"></span>
-                <span class="absolute text-gray-300 md:text-9xl text-[150px] font-bold opacity-15 select-none pointer-events-none text-[clamp(4rem,18vw,9rem)] whitespace-nowrap">ABOUT ME</span>
+                <span class="mt-2 lg:w-20 h-[3.3px] bg-customGreen w-32"></span>
+                <span class="absolute text-gray-300 lg:text-9xl text-[150px] font-bold opacity-15 select-none pointer-events-none text-[clamp(4rem,18vw,9rem)] whitespace-nowrap">ABOUT ME  </span>
             </div>
 
                 
                 
-                <div class="container  flex w-full mt-10 lg:gap-7 gap-20   flex-col lg:flex-row justify-center items-center lg:items-start w-full md:p-10 lg:p-10 ">
+                <div class="flex flex-col mt-10 p-3 gap-10 md:flex-row md:text-start " >
 
                   
-                    <div class="gap-5 flex flex-col lg:w-[65%] lg:p-2 p-[0.5px]">
-                           <div class="lg:text-3xl md:text-2xl  font-bold"><p >I'm <span class="text-customGreen ">Ayush Sharma,</span> a Web Developer </p></div>
+                    <div class="flex flex-col gap-5 text-center md:text-start">
+                           <div class="text-3xl font-semibold "><p >I'm <span class="text-customGreen">Ayush Sharma,</span> a Web Developer </p></div>
                        
                         
-                        <p class="opacity-55 md:text-lg lg:text-xl">As a frontend developer, I create responsive and modern web experiences using HTML, CSS, and JavaScript. My expertise with Tailwind CSS enables me to build clean, efficient interfaces quickly while maintaining design consistency across projects. I focus on delivering user-friendly websites that look great on all devices.</p>
-                        <p class="opacity-55 md:text-lg lg:text-xl">Currently learning React to expand my skill set into component-based development and modern JavaScript frameworks. This helps me build more dynamic and interactive applications while staying updated with current industry practices.</p>
+                        <p class="opacity-55">As a frontend developer, I create responsive and modern web experiences using HTML, CSS, and JavaScript. My expertise with Tailwind CSS enables me to build clean, efficient interfaces quickly while maintaining design consistency across projects. I focus on delivering user-friendly websites that look great on all devices.</p>
+                        <p class="opacity-55">Currently learning React to expand my skill set into component-based development and modern JavaScript frameworks. This helps me build more dynamic and interactive applications while staying updated with current industry practices.</p>
                     </div>
 
 
-                    <div class="flex flex-col lg:justify-center mb-10 lg:items-center lg:justify-normal items-start  gap-3 lg:w-[31%] w-full mt-2 font-bold" style="margin-bottom: 40px;">
-                        <p class="md:text-base lg:text-lg ">Name: Ayush Sharma</p>
-                        <span class="w-full bg-white h-[0.5px] w-full text-xl opacity-20"></span>
-                        <p class="md:text-lg">Email: ayushdev.codes@gmail.com</p><span class="w-full  bg-white h-[0.5px] w-full opacity-20"></span>
-                        <p class="md:text-lg">Age: 21</p><span class="w-full bg-white h-[0.5px] w-full  opacity-20"></span>
-                        <p class="md:text-lg">From: Mumbai</p><span class="w-full bg-white h-[0.5px] w-full  opacity-20"></span>
-                        <button class="pr-5 pl-5 pt-2 pb-2 flex items-center justify-center md:mb-10  border bg-custext-customGreen lg:text-lg text-xl rounded-full border-customGreen text-customGreen mt-2 hover:bg-customGreen hover:text-white cursor-pointer transition-colors duration-300" style="width: fit-content;">Download CV</button>
+                    <div class="flex text-base flex-col gap-3 font-[550] items-start">
+                        <p>Name: <span class="font-normal">Ayush Sharma</span></p>
+                        <span class="w-full border-[0.5px] opacity-15 "></span>
+                        <p>Email: <span class="font-normal text-customGreen">ayushdev.codes@gmail.com</span> </p><span class="w-full border-[0.5px] opacity-15 "></span>
+                        <p>Age: <span class="font-normal"> 21</span></p><span class="w-full border-[0.5px] opacity-15 "></span>
+                        <p>From: <span class="font-normal">Mumbai</span></p><span class="w-full border-[0.5px] opacity-15 "></span>
+                            <button class="w-fit py-2 px-4 bg-customGreen hover:bg-transparent hover:text-customGreen hover:border-customGreen border border-transparent mt-3 text-white rounded-full transition-colors duration-300 font-semibold">Download CV</button>
                         
                     </div>
                 </div>
@@ -108,7 +109,7 @@
 
 
 
-            <div class="container  grid md:grid-rows-1 md:grid-cols-2 gap-12 lg:mt-10 lg:p-10 sm:p-10 mt-10">
+            <div class="container  grid lg:grid-rows-1 lg:grid-cols-2 w-full flex items-center justify-center  gap-12 lg:mt-10 lg:p-10 sm:p-10 mt-10">
                 <div class="flex items-start gap-4 w-full p-0 m-0">
                     <div class="rounded-2xl flex-shrink-1">
                         <img src="assest/landing-page.png" alt="landing-page" class="lg:w-16 w-[70px] object-contain" style="width: 3rem;">
@@ -296,7 +297,7 @@
 
 
         <!--My Works-->
-        <div class=" relative inline-block bg-lightGrey flex flex-col h-fit gap-10 p-10" id="work" style="width: 100%;">
+        <div class=" relative inline-block bg-lightGrey flex flex-col h-fit gap-10 p-5" id="work" style="width: 100%;">
             <div class="mt-20 flex justify-center items-center flex-col">
                 <span class="relative text-white lg:mt-6 mt-3 lg:text-4xl text-6xl font-bold text-[clamp(2rem,6vw,3.5rem)]">My Works</span>
                 <span class="mt-2 lg:w-20 w-32 h-[3.3px] bg-customGreen"></span>

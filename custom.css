@@ -51,7 +51,7 @@ body{
 @media (min-width:300px) and (max-width:400px) {
     .grid-box{ 
     display: grid;
-    grid-template-columns: 340px;
+    grid-template-columns: 320px;
     grid-template-rows: 370px 370px 370px 370px 370px 370px;
     grid-template-areas: 
     "box-1  "

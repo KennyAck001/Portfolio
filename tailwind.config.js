@@ -11,12 +11,16 @@ module.exports = {
         hov: "#ffff5",
       },
       screens: {
-        sm: "640px",
-        md: "900px",
+        sm: "580px",
+        md: "1000px",
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
         "xs": "360px", // Custom screen size (optional)
+      },
+       fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        yourFont: ['YourFont', 'sans-serif'] // for local font
       },
     },
   },
