@@ -6,7 +6,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         // Add your JS file
-        script: 'main.js'
+        script: 'src/main.js'
       }
     }
   }
